@@ -91,7 +91,7 @@
     <main>
         <section>
             <div class="dev-card-simple">
-                <h3>Sessão em Desenvolvimento</h3>
+                <h3>Seção em Desenvolvimento</h3>
                 <p>Atualmente estou trabalhando nesta seção</p>
                 <div class="progress-indicator">
                     <div class="progress-bar"></div>
@@ -102,7 +102,18 @@
 
         <section>
             <div class="dev-card-simple">
-                <h3>Sessão em Desenvolvimento</h3>
+                <h3>Seção em Desenvolvimento</h3>
+                <p>Atualmente estou trabalhando nesta seção</p>
+                <div class="progress-indicator">
+                    <div class="progress-bar"></div>
+                </div>
+                <small>Previsão de conclusão: sem previsão</small>
+            </div>
+        </section>
+
+        <!-- <section>
+            <div class="dev-card-simple">
+                <h3>Seção em Desenvolvimento</h3>
                 <p>Atualmente estou trabalhando nesta seção</p>
                 <div class="progress-indicator">
                     <div class="progress-bar"></div>
@@ -113,7 +124,7 @@
 
         <section>
             <div class="dev-card-simple">
-                <h3>Sessão em Desenvolvimento</h3>
+                <h3>Seção em Desenvolvimento</h3>
                 <p>Atualmente estou trabalhando nesta seção</p>
                 <div class="progress-indicator">
                     <div class="progress-bar"></div>
@@ -124,7 +135,7 @@
 
         <section>
             <div class="dev-card-simple">
-                <h3>Sessão em Desenvolvimento</h3>
+                <h3>Seção em Desenvolvimento</h3>
                 <p>Atualmente estou trabalhando nesta seção</p>
                 <div class="progress-indicator">
                     <div class="progress-bar"></div>
@@ -135,36 +146,23 @@
 
         <section>
             <div class="dev-card-simple">
-                <h3>Sessão em Desenvolvimento</h3>
+                <h3>Seção em Desenvolvimento</h3>
                 <p>Atualmente estou trabalhando nesta seção</p>
                 <div class="progress-indicator">
                     <div class="progress-bar"></div>
                 </div>
                 <small>Previsão de conclusão: sem previsão</small>
             </div>
-        </section>
-
-        <section>
-            <div class="dev-card-simple">
-                <h3>Sessão em Desenvolvimento</h3>
-                <p>Atualmente estou trabalhando nesta seção</p>
-                <div class="progress-indicator">
-                    <div class="progress-bar"></div>
-                </div>
-                <small>Previsão de conclusão: sem previsão</small>
-            </div>
-        </section>
+        </section> -->
 
 
     </main>
 
-
     <footer class="fim">
-
-
-        <p>$copy; 2025 meu Site. Todos os direitps reservados</p>
+        
+        
         <div class=Contatos>
-
+            
             <ul>
                 <li>
                     <a href="https://www.instagram.com/marcos_junnioor/" target="_blank" >
@@ -187,7 +185,94 @@
 
             </ul>
 
+            <ul>
+
+                <li>
+                    <address>
+
+                        <div class="email-container">
+                            <span class="email-label">Email IFSC:</span>
+                            <input type="text" id="email-ifsc" value="marcos.jlf@aluno.ifsc.edu.br" readonly  style="
+                                background: transparent;
+                                border: none;
+                                outline: none;
+                                color: #ffffff; /* branco, ajuste se necessário */
+                                font-size: 1.0rem;
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                font-weight: 400;
+                                width: 65%;
+                                pointer-events: none;
+                            ">
+                            <button onclick="copyEmail('email-ifsc')"><img src="/images/copy.png" alt="Copiar"></button>
+
+                            <!-- <p type="text" id="email-ifsc" value="marcos.jlf@aluno.ifsc.edu.br">marcos.jlf@aluno.ifsc.edu.br</p> -->
+
+                            
+                        </div>
+                        
+                        <!-- <li>
+                            <address>
+                                Personal email  
+                                <a href="marcos.j.lemes.2004@gmail.com">marcos.j.lemes.2004@gmail.com</a><br>
+                                Email IFSC 
+                                <a href="marcos.jlf@aluno.ifsc.edu.br">marcos.jlf@aluno.ifsc.edu.br</a>
+                            </address>
+                        </li> -->
+                        
+                        <div class="email-container">
+                            <span class="email-label">Personal Email:</span>
+                            <input type="text" id="email-personal" value="marcos.j.lemes.2004@gmail.com" readonly style="
+                                background-color: transparent;
+                                border: none;
+                                outline: none;
+                                color: #ffffff; /* branco, ajuste se necessário */
+                                font-size: 1.0rem;
+                                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                font-weight: 400;
+                                width: 55%;
+                                pointer-events: none;">
+
+                            <button onclick="copyEmailP('email-personal')"><img src="./images/copy.png" alt="Copiar"></button>
+                        </div>
+                        <br>
+                        Código no github: 
+                        <a href="https://github.com/marcos-j-ferreira/Portfolio.git" target="_blank" style="color: rgb(85, 85, 185); font-family: sans-serif; text-decoration: underline;"  >Repositório portfólio</a>
+
+                    </address>
+
+                </li>
+            </ul>
+            
         </div>
+
+        <p>&copy; 2025 Marcos. Todos os direitos reservados</p>
+
     </footer>
+    
 </body>
 </html>
+
+
+            <!-- <script>
+                function copyEmail() {
+                    const emailInput = document.getElementById("email-ifsc");
+                    emailInput.select();
+                    emailInput.setSelectionRange(0, 99999); // Para dispositivos móveis
+                    document.execCommand("copy");
+                    alert("Email copiado: " + emailInput.value);
+                }
+                
+                function copyEmailP(){
+                    const emailInput = document.getElementById("email-personal");
+                    emailInput.select();
+                    emailInput.setSelectionRange(0, 99999);
+                    document.execCommand("copy");
+                    alert("Email copiado: " + emailInput.value);
+                    }
+            </script> -->
+
+
+
+<!-- <label for="email-copy">Email IFSC:</label>
+<input type="text" id="email-copy" value="marcos.jlf@aluno.ifsc.edu.br" readonly>
+<button onclick="copyEmail()">Copiar</button> -->
