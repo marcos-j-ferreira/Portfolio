@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Pouso - AeroSite</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <script src="../js/game.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="../images/logo.png" alt="Logo AeroSite" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="game.html" class="active">Jogo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="game-page">
+        <div class="container">
+            <h1>Jogo de Pouso de Avião</h1>
+            <p class="game-instructions">Use as setas ← → para mover o avião e a barra de espaço para reduzir a velocidade. Pouse suavemente na pista!</p>
+            
+            <div class="game-container">
+                <div class="game-stats">
+                    <div>Velocidade: <span id="speed">0</span> km/h</div>
+                    <div>Altitude: <span id="altitude">0</span> m</div>
+                    <div>Pontuação: <span id="score">0</span></div>
+                    <button id="restart">Reiniciar Jogo</button>
+                </div>
+                <canvas id="gameCanvas" width="800" height="500"></canvas>
+            </div>
+            
+            <div class="game-controls">
+                <h3>Como Jogar:</h3>
+                <ul>
+                    <li>← → : Movimentar o avião</li>
+                    <li>Barra de Espaço: Reduzir velocidade</li>
+                    <li>Objetivo: Pousar suavemente na pista (menos de 200 km/h)</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 AeroSite - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/game.js"></script>
+</body>
+</html>
